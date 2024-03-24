@@ -27,10 +27,10 @@ function calculatePayee(taxableIncome) {
     // Calculate payee based on taxable income and tax brackets
     for (const bracket of taxBrackets) {
         if (taxableIncome <= bracket.limit) {
-            payee += (taxableIncome - (bracket === taxBrackets[0] ? 0 : taxBrackets[taxBrackets.indexOf(bracket) - 1].limit)) * bracket.rate;
+            payee = payee + (taxableIncome - (bracket === taxBrackets[0] ? 0 : taxBrackets[taxBrackets.indexOf(bracket) - 1].limit)) * bracket.rate;
             break;
         } else {
-            payee += (bracket.limit - (bracket === taxBrackets[0] ? 0 : taxBrackets[taxBrackets.indexOf(bracket) - 1].limit)) * bracket.rate;
+            payee = payee + (bracket.limit - (bracket === taxBrackets[0] ? 0 : taxBrackets[taxBrackets.indexOf(bracket) - 1].limit)) * bracket.rate;
         }
     }
 
