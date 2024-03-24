@@ -108,8 +108,22 @@ function calculateTaxableIncome(basicSalary, allowances) {
 }
 
 
-const basicSalary = 50000; // Example basic salary
-const benefits = 10000; // Example benefits
+// Prompt for basic salary and benefits
+let basicSalary = prompt("Enter basic salary:");
+let benefits = prompt("Enter benefits:");
+
+// Convert inputs to numbers
+basicSalary = parseFloat(basicSalary);
+benefits = parseFloat(benefits);
+
+// Validate user input
+while (isNaN(basicSalary) || isNaN(benefits)) {
+    alert("Invalid input! Please enter a number.");
+    basicSalary = parseFloat(prompt("Enter basic salary:"));
+    benefits = parseFloat(prompt("Enter benefits:"));
+}
+
+// Calculate net salary
 const netSalary = calculateNetSalary(basicSalary, benefits, allowances);
 console.log("Net Salary:", netSalary);
 
