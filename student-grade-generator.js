@@ -1,10 +1,3 @@
-/**
- * This function calculates a grade based on the given marks.
- *
- * @param {number} marks - The student's marks to be graded.
- * @return {string} The corresponding grade for the given marks.
- */
-
 function calculateGrade(marks) {
     // If the student's marks are between 80 and 100 (inclusive), return 'A'.
     if (79 < marks && marks <= 100) {
