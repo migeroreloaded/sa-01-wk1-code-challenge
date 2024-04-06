@@ -28,12 +28,12 @@ Write a program that takes as input the speed of a car e.g 80. If the speed is l
 
 Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary.
 
-## How to Run:
+## How to Run
 
 ### Requirements
 
-* A computer with a bash terminal and node installed.
-* Access to the internet.
+*A computer with a bash terminal and node installed.
+*Access to the internet.
 
 ### Installation Process
 
@@ -63,12 +63,10 @@ Write a program whose major task is to calculate an individual’s Net Salary by
       node net-salary-calculator.js # for Challenge 3
     ```
 
-
-
 ## Technologies used
 
-* JS
-* Node Runtime Environment
+*JS
+*Node Runtime Environment
 
 ## Contact
 
@@ -79,7 +77,7 @@ https://github.com/migeroreloaded
 
 The content of this site is licensed under the MIT license
 
-Copyright &copy; 2024 Migero 
+Copyright &copy; 2024 Migero
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
