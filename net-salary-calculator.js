@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 // Define the allowances object with various relief and contribution values
 const allowances = {
     personalRelief: 2400,
@@ -109,18 +111,14 @@ function calculateTaxableIncome(basicSalary, allowances) {
 
 
 // Prompt for basic salary and benefits
-let basicSalary = prompt("Enter basic salary:");
-let benefits = prompt("Enter benefits:");
-
-// Convert inputs to numbers
-basicSalary = parseFloat(basicSalary);
-benefits = parseFloat(benefits);
+let basicSalary = parseFloat(prompt("Enter basic salary: "));
+let benefits = parseFloat(prompt("Enter benefits: "));
 
 // Validate user input
 while (isNaN(basicSalary) || isNaN(benefits)) {
-    alert("Invalid input! Please enter a number.");
-    basicSalary = parseFloat(prompt("Enter basic salary:"));
-    benefits = parseFloat(prompt("Enter benefits:"));
+    console.log("Invalid input! Please enter a number.");
+    basicSalary = parseFloat(prompt("Enter basic salary: "));
+    benefits = parseFloat(prompt("Enter benefits: "));
 }
 
 // Calculate net salary
@@ -130,7 +128,8 @@ console.log("Net Salary:", netSalary);
 // const taxableIncome = calculateTaxableIncome(basicSalary, allowances); // Remove this line
 const taxableIncome = basicSalary; // Or just set taxableIncome to basicSalary since allowances are not considered in the example usage
 const payee = calculatePayee(taxableIncome);
-console.log(`Taxable Income: ${taxableIncome}, Payee: ${payee}`);
+console.log(`Taxable Income: ${taxableIncome}`);
+console.log(`Payee: ${payee}`);
 
 const nhifDeductions = calculateNHIF(basicSalary);
 console.log(`NHIF deductions: ${nhifDeductions}`);
