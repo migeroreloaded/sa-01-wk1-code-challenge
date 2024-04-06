@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 function speedDetector(inputSpeed) {
     // Define the speed limit as a constant
     const speedLimit = 70;
@@ -6,7 +8,7 @@ function speedDetector(inputSpeed) {
     let demeritPoints = 0;
 
     // Check if the inputSpeed is within the valid range
-    if (inputSpeed >= 0 && inputSpeed <= 180) {
+    if (inputSpeed >= 0 && inputSpeed <= 360) {
 
         // Check if the inputSpeed is less than or equal to the speed limit
         if (inputSpeed <= speedLimit) {
