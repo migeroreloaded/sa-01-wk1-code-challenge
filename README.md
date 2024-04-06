@@ -5,6 +5,7 @@
 #### By *Michael George*
 
 ## Descrption
+
 ### Toy Problem Challenges
 
 This repository contains solutions to three toy problem challenges implemented in JavaScript.
@@ -65,14 +66,17 @@ Write a program whose major task is to calculate an individual’s Net Salary by
 
 
 ## Technologies used
+
 * JS
 * Node Runtime Environment
 
 ## Contact
+
 If you have any questions, please contact me at
 https://github.com/migeroreloaded
 
 ## License
+
 The content of this site is licensed under the MIT license
 
 Copyright &copy; 2024 Migero 
